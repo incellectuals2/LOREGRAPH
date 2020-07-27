@@ -1,0 +1,145 @@
+digraph lore {
+    splines=line;
+    bgcolor=black;
+    // feel free to change the font to render on your machine if APL385 Unicode
+    // is missing. alternatively, buck up and install it from
+    // www.dyalog.com/apl-font-keyboard.htm
+    node [shape=plaintext, fontname="APL385 Unicode"];
+    edge [color="white"];
+
+    M_I_O [label=<
+        <TABLE BGCOLOR="white" BORDER="0" CELLBORDER="1" CELLSPACING="0">
+            <TR>
+                <TD> meaningful_images_only </TD>
+            </TR>
+            <TR>
+                <TD>Summer '19 - Christmas '19</TD>
+            </TR>
+        </TABLE>
+    >];
+
+    BALKANIZATION [label=<
+        <TABLE BGCOLOR="red" BORDER="0" CELLBORDER="1" CELLSPACING="0">
+            <TR>
+                <TD><B>BALKANIZATION STEP</B></TD>
+            </TR>
+        </TABLE>
+    >];
+
+    INCEL [label=<
+        <TABLE BGCOLOR="white" BORDER="0" CELLBORDER="1" CELLSPACING="0">
+            <TR>
+                <TD><B>incellectuals</B></TD>
+            </TR>
+            <TR>
+                <TD>Christmas '19 - Spring '20, Late spring resurrection</TD>
+            </TR>
+        </TABLE>
+    >];
+
+    FAP [label=<
+        <TABLE BGCOLOR="white" BORDER="0" CELLBORDER="1" CELLSPACING="0">
+            <TR>
+                <TD><B>mio_fap_bucket</B></TD>
+            </TR>
+            <TR>
+                <TD>Christmas '19 - Present</TD>
+            </TR>
+        </TABLE>
+    >];
+
+    MIO [label=<
+        <TABLE BGCOLOR="white" BORDER="0" CELLBORDER="1" CELLSPACING="0">
+            <TR>
+                <TD><B>meaningful_images_only</B></TD>
+            </TR>
+            <TR>
+                <TD>Christmas '19 - Present</TD>
+            </TR>
+        </TABLE>
+    >];
+
+    MIO_I_O [label=<
+        <TABLE BGCOLOR="white" BORDER="0" CELLBORDER="1" CELLSPACING="0">
+            <TR>
+                <TD><B>mio_images_only (mioio, the latter)</B></TD>
+            </TR>
+            <TR>
+                <TD>Christmas '19 - YBC Spring '20</TD>
+            </TR>
+            <TR>
+                <TD><I>Sacrificed for YBC gold tier donor rewards program.</I></TD>
+            </TR>
+        </TABLE>
+    >];
+
+    MEANINGLESS [label=<
+        <TABLE BGCOLOR="white" BORDER="0" CELLBORDER="1" CELLSPACING="0">
+            <TR>
+                <TD><B>meaningless_images_only</B></TD>
+            </TR>
+            <TR>
+                <TD>YBC Spring '20 - ???</TD>
+            </TR>
+            <TR>
+                <TD><I>Orange admin rebellion.</I></TD>
+            </TR>
+        </TABLE>
+    >];
+
+    M__I__O [label=<
+        <TABLE BGCOLOR="white" BORDER="0" CELLBORDER="1" CELLSPACING="0">
+            <TR>
+                <TD><B>meaningful__images__only</B></TD>
+            </TR>
+            <TR>
+                <TD>YBC late/post-Spring apocalypse '20 - present???</TD>
+            </TR>
+        </TABLE>
+    >];
+
+    UNCUT [label=<
+        <TABLE BGCOLOR="red" BORDER="0" CELLBORDER="1" CELLSPACING="0">
+            <TR>
+                <TD><B>UNCUT GEMS SUBSET (SERBIAN ADMINS)</B></TD>
+            </TR>
+        </TABLE>
+    >];
+
+    UGO [label=<
+        <TABLE BGCOLOR="white" BORDER="0" CELLBORDER="1" CELLSPACING="0">
+            <TR>
+                <TD><B>uncut_gems_official</B></TD>
+            </TR>
+            <TR>
+                <TD>Christmas '19 - present</TD>
+            </TR>
+        </TABLE>
+    >];
+
+    UGFO [label=<
+        <TABLE BGCOLOR="white" BORDER="0" CELLBORDER="1" CELLSPACING="0">
+            <TR>
+                <TD><B>uncut_gems_fandom_official</B></TD>
+            </TR>
+            <TR>
+                <TD>Christmas '19 - present</TD>
+            </TR>
+        </TABLE>
+    >];
+
+    M_I_O -> BALKANIZATION;
+
+    BALKANIZATION -> INCEL;
+    BALKANIZATION -> FAP;
+    BALKANIZATION -> MIO_I_O;
+    BALKANIZATION -> MIO;
+    BALKANIZATION -> UNCUT;
+
+    UNCUT -> UGO;
+    UNCUT -> UGFO;
+
+    MIO_I_O -> MEANINGLESS;
+
+    MEANINGLESS -> M__I__O;
+}
